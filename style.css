@@ -1,0 +1,348 @@
+
+html, body{
+	/*background: linear-gradient(323deg, rgba(35,37,38,1) 0%, rgba(65,67,69,1) 49%) no-repeat center center fixed; ;*/
+	background-color: var(--bg-color);
+	background-size: cover;
+	margin: auto 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,500,800,800i,900,900i&displa{y=swap');
+
+
+#header-text {
+	font-family: 'Noto Sans', sans-serif;
+	text-align: center;
+	color: var(--font-color);
+	
+	
+	
+}
+.main-section{
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  height: 80%;
+  width: 90%;
+  max-height: 81%;
+  border: 2px solid white;
+  border
+  
+}
+   
+/*.main-section .items {
+	list-style: none;
+	max-height: 200px;
+      column-count: auto;
+
+    column-gap: 10px;
+    column-rule: 2px solid #ffffff;
+   
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 30px;
+
+	text-align: left;
+
+	color: var(--font-color);
+
+	    margin-top: 6px;
+    margin-bottom: 6px;
+}
+*/
+.btn {
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 0px;
+  color: var(--font-color);
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+.btns {
+  font-family: 'El Messiri', sans-serif;
+  box-sizing: border-box;
+  position: absolute;
+  font-size: 13px;
+  padding-top: 30px;
+  text-decoration: none;
+  padding: 15px 25px;
+  color: var(--font-color);
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  padding: 0;
+  
+  
+  width: 49px;
+  height: 25px;
+  border-radius: 10px;
+
+}
+
+
+.red {
+  background-color: #e74c3c;
+  
+}
+.reds {
+  background-color: #e74c3c;
+  margin-top: -90px;
+  
+}
+.red:hover {
+  background-color: #FF6656;
+}
+.tinput{
+	font-family: 'Noto Sans', sans-serif;
+	border-radius: 10px;
+	background-color: transparent;
+	color: var(--font-color);
+	height: 30px;
+	width: 180px;
+	font-size: 1.5em;
+	margin-left: 10px;
+}
+.tinputs{
+	font-family: 'Noto Sans', sans-serif;
+	border-radius: 10px;
+	background-color: transparent;
+	color: var(--font-color);
+	height: 30px;
+	width: 140px;
+	font-size: 1.5em;
+	margin-left: 10px;
+}
+button {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 30px;
+
+
+
+}
+
+.items {
+	position: relative;
+	resize: none;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 25px;
+	color: var(--font-color);
+	font-family: sans-serif;
+    
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    max-height: 400px;
+    max-width: 600px;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.items input {
+	position: absolute;
+}
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+  margin-top: 15px;  
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+:root {
+    --primary-color: #232526;
+    --secondary-color: white;
+    --font-color: white;
+    --bg-color: #232526;
+    --heading-color: white;
+}
+[data-theme="dark"] {
+    --primary-color: #C9D6FF;
+    --secondary-color: black;
+    --font-color: black;
+    --bg-color: #C9D6FF;
+    --heading-color: black;
+}
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  margin:auto;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: white;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #292c35;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.notification {
+	 font-family: 'El Messiri', sans-serif;
+
+	 height: 90px;
+     width: 170px;
+     line-height: 90px;
+     max-height: 81%;
+     text-align: center;
+
+     
+     color: white;
+	 position:absolute;
+     bottom:0;
+     right:0;
+     top: 0;
+     vertical-align: center;
+     border-radius: 40px 40px 10px 40px;
+}
+.danger {
+	background-color: rgba(231, 76, 60,0.6);
+}
+.success {
+	background-color: rgba(39, 174, 96,0.6);
+}
+#myProgress {
+  width: 100%;
+  background-color: transparent;
+  
+  margin-top: -67px;
+  margin-left: 24px; 
+  width: 80%;
+
+}
+
+#myBar {
+	border-radius: 20px;
+  width: 1%;
+  height: 5px;
+  margin-top: -30px;
+  background-color: red;
+  animation: 
+  typing 3.6s steps(100, end),
+  blink-caret .1s step-end infinite;
+  animation-fill-mode: forwards;
+}
+.confirmation {
+	vertical-align: top;
+	background-color: rgba(41, 128, 185,0.6);
+	
+    
+
+}
+.fade-out {
+	opacity: 1;
+	animation-name: fadeOutOpacity;
+	-webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+}
+
+@keyframes fadeOutOpacity {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 4s;
+	-webkit-animation-fill-mode: both;
+}
+
+@keyframes fadeInOpacity {
+   0% {
+        opacity: 0;
+    }
+    5% {
+       opacity: 1;
+    }
+    84% {
+       opacity: 1;
+    }
+    100% {
+       opacity: 0;
+       display: none;
+    }

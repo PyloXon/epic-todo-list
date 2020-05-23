@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- the below meta tag is default in most modern browsers. however if you have an
+  older browser, the emojis may not show up properly. In which case you need this meta
+  tag. Read more here: https://teamtreehouse.com/community/meta-charsetutf8-what-does-this-mean-or-what-does-it-do-i-deleted-it-from-the-code-and-nothing-changed -->
+  <meta charset="utf-8" >  
+  <title>Grid Master</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="typewriter">
+		<h1 id="header-text">Epic Todo List</h1>
+
+	</div>
+	<div class="theme-switch-wrapper">
+	    <label class="theme-switch" for="checkbox">
+	        <input type="checkbox" id="checkbox" />
+	        <div class="slider round"></div>
+	  </label>
+	  
+	</div>
+	
+	<div class="main-section" id="ms">
+
+		<div class="items" id="itms">
+
+		</div>
+		<input type='button' onclick='changeText2()' value='Add' class="btn red"/>
+		<input type="text" id="itemname" onkeypress="handle(event)" class="tinput">
+		<input type='button' onclick='removeSpec()' value='Remove' class="btn red"/>
+		<input type="text" value="Item's name" onkeypress="handle(event)" id="indexremove" class="tinput">
+		<input type='button' onclick='edit()' value='Edit' class="btn red"/>
+		<input type="text" value="Item's name" onkeypress="handle(event)" id="editbef" class="tinputs">
+		<input type="text" value="Item's name" onkeypress="handle(event)" id="editaft" class="tinputs">
+        <input type='button' onclick='deleteAllConfirmation()' value='Delete all' class="btn red" id="dlall"/>
+	</div>
+	
+
+	<!-- <div class="notification fade-in">Not found!</div> -->
+  <script type="text/javascript" src="javascript.js">
+  </script>
+</body>
+</html>
