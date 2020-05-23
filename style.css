@@ -11,7 +11,22 @@ html, body{
 }
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,500,800,800i,900,900i&displa{y=swap');
 
+@media (max-width: 1000px) {
 
+  .tinput {
+    
+    width: 2em;
+    margin:100px;
+    margin-top:400px;
+  }
+  .tinputs {
+    bottom: 0;
+    width: 240px;
+    margin:100px;
+   
+  }
+
+}
 #header-text {
 	font-family: 'Noto Sans', sans-serif;
 	text-align: center;
@@ -119,6 +134,7 @@ html, body{
 	width: 180px;
 	font-size: 1.5em;
   margin-left: 10px;
+  
   outline: none;
   
 }
