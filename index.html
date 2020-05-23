@@ -5,7 +5,7 @@
   older browser, the emojis may not show up properly. In which case you need this meta
   tag. Read more here: https://teamtreehouse.com/community/meta-charsetutf8-what-does-this-mean-or-what-does-it-do-i-deleted-it-from-the-code-and-nothing-changed -->
   <meta charset="utf-8" >  
-  <title>Grid Master</title>
+  <title>Epic Todo List</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
@@ -31,10 +31,10 @@
 		<input type='button' onclick='changeText2()' value='Add' class="btn red"/>
 		<input type="text" id="itemname" onkeypress="handle(event)" class="tinput">
 		<input type='button' onclick='removeSpec()' value='Remove' class="btn red"/>
-		<input type="text" value="Item's name" onkeypress="handle(event)" id="indexremove" class="tinput">
+		<input type="text" placeholder="Item's name" onkeypress="handle(event)" id="indexremove" class="tinput">
 		<input type='button' onclick='edit()' value='Edit' class="btn red"/>
-		<input type="text" value="Item's name" onkeypress="handle(event)" id="editbef" class="tinputs">
-		<input type="text" value="Item's name" onkeypress="handle(event)" id="editaft" class="tinputs">
+		<input type="text" placeholder="Currently" onkeypress="handle(event)" id="editbef" class="tinputs">
+		<input type="text" placeholder="Changed to be" onkeypress="handle(event)" id="editaft" class="tinputs">
         <input type='button' onclick='deleteAllConfirmation()' value='Delete all' class="btn red" id="dlall"/>
 	</div>
 	
